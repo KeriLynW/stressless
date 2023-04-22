@@ -1,0 +1,56 @@
+.signnup {
+    text-align: left;
+    font-family: Verdana, sans-serif;
+
+}
+.signup-header {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding-left: calc(65px + 16vmin);
+    padding-top: 100px;
+}
+.signup-title {
+    font-size: calc(15px + 3vmin);
+    font-family: Verdana, sans-serif;
+    color: black;
+}
+.signup-subtitle {
+    padding-top: 40px;
+    color: grey;
+}
+/*.idk{
+    position: absolute;
+    align-items: center;
+
+}*/
+
+.signup-form {
+    background-color: #F3F3F3;
+    font-family: Verdana, sans-serif;
+    
+    /*display: flex;
+    flex-direction: column;
+    align-items: left;*/
+    padding-left: calc(65px + 16vmin);
+    padding-top: 80px;
+    min-height: 58vh;
+    padding-bottom: 50px;
+}
+
+.laput {
+    display:flex;
+    flex-direction:column; 
+}
+
+/*.error{
+    display: visible;
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+*/
