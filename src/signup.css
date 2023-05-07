@@ -45,12 +45,14 @@
     flex-direction:column; 
 }
 
-/*.error{
-    display: visible;
-    color: red;
-}
 
-.hidden{
-    display: none;
-}
-*/
+.signups {
+    background-color:#F3F3F3;
+    color: #666464;
+    border-style: solid;
+    border-color: #666464;
+    width: calc(210px);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+  }

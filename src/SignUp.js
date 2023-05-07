@@ -10,6 +10,16 @@ function Signup () {
         //alert("login button works");
         navigate('/home');
       }
+    function matchPassword() {
+        var pass = document.getElementById("pass");
+        var cpasss = document.getElementById("c-pass-s");
+        if(pass != cpasss)
+        {	
+            alert("Passwords did not match");
+        } else {
+            alert("Password created successfully");
+        }
+      }  
     return (
         <div className="signnup">
             <img src= {shape} className="shape" onClick={navigate_home}/>
@@ -26,11 +36,11 @@ function Signup () {
                 <input className="laput" type="text" id="l-name" name="l-name"/><br/><br/>
                 <label className="laput" for="u-name">Username: </label>
                 <input className="laput" type="text" id="u-name" name="u-name"/><br/><br/>
-                <label className="laput" for="pass">Password:  </label>
-                <input className="laput" type="text" id="pass" name="pass"/><br/><br/>
-                <label className="laput" for="c-pass-s"> Confirm Password:  </label>
-                <input className="laput" type="text" id="confirm-pass" name="c-pass-s"/><br/><br/>
-                <input type="submit" value="Sign Up" className="signup buttons"/>
+                <label className="laput" for="pass">Password (minimum 8 characters):  </label>
+                <input className="laput" type="password" id="pass" name="pass" minlength="8" required/><br/><br/>
+                <label className="laput" for="cpasss"> Confirm Password:  </label>
+                <input className="laput" type="password" id="confirm-pass" name="cpasss" minlength="8" required/><br/><br/>
+                <input type="submit" value="Sign Up" className="signups" onclick={matchPassword()}/>
             </form>
         </div>
     );

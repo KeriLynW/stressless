@@ -22,7 +22,7 @@ function Login () {
                     <label  className="laput" for="u-name">Username: </label>
                     <input  className="laput" type="text" id="u-name" name="u-name"/><br/><br/>
                     <label  className="laput" for="pass-l">Password:  </label>
-                    <input  className="laput" type="text" id="pass-l" name="pass-l"/><br/><br/>
+                    <input  className="laput" type="password" id="pass-l" name="pass-l" required/><br/><br/>
                     <input type="submit" value="Login" className="login buttons"/>
              </form>
         </div>
