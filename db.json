@@ -1,0 +1,9 @@
+{
+    "cities": [
+        {"name":"Toronto"},
+        {"name":"NewYork"},
+        {"name":"Paris"},
+        {"name":"Waterloo"},
+        {"name":"Scarborough"}
+    ]
+}

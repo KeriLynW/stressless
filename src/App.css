@@ -40,7 +40,7 @@
   color: black;
   font-size: calc(22px + 4vmin);
   font-family: Garamond, serif;
-}
+} 
 
 .sub-title {
   color: #666464;
@@ -55,7 +55,7 @@
   border: 1px;
 }
 
-.login {
+.login-button, .signup-button {
  background-color: #283EFF;
  color: white;
  border: 1px;

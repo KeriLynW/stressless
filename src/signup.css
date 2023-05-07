@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: left;
     justify-content: left;
-    padding-left: calc(65px + 16vmin);
+    padding-left: calc(6np5px + 16vmin);
     padding-top: 100px;
 }
 .signup-title {
@@ -45,6 +45,22 @@
     flex-direction:column; 
 }
 
+.disabled{
+    opacity: .5;
+}
+
+.password-error-message{
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+.error{
+    display: visible;
+    color: red;
+}
 
 .signups {
     background-color:#F3F3F3;
