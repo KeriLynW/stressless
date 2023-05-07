@@ -59,7 +59,7 @@ function Signup () {
     return (
         <div className="signnup">
             <img src= {shape} className="shape" onClick={navigate_home}/>
-            <div className="signup-form">disabledButton
+            <div className="signup-form">
                 <label className="laput" for="f-name">First Name: </label>
                 <input className="laput" type="text" id="f-name" onChange={updateFirstname}/><br/><br/>
                 <label className="laput" for="l-name">Last Name: </label>
@@ -70,7 +70,7 @@ function Signup () {
                 <input className="laput" type="text" id="pass" onChange={updatePassword}/><br/><br/>
                 <label className="laput" for="c-pass-s"> Confirm Password:  </label>
                 <input className="laput" type="text" id="pass2" onChange={updatePassword2}/><br/><br/>
-                <label className={disabledButton ? "password-error-message": "hidden"} for="c-pass-s"> Passwords do not match</label>
+                <label className={(password.length>3 && disabledButton) ? "password-error-message": "hidden"} for="c-pass-s"> Passwords do not match</label>
                 <br/>
                 <br/>
                 <button disabled={disabledButton} className={disabledButton ? "signup-button buttons disabled" : "signup-button buttons"} onClick={signupUser} >Signup</button>
