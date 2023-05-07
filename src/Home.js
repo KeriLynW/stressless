@@ -27,11 +27,11 @@ function Home() {
         <a className="sub-title">
           Start your anti-procrastination journey here.
         </a>
-        <button className="login buttons" onClick={login}> Login </button>
+        <button className="login-button buttons" onClick={login}> Login </button>
         <div className= "divider">
           or
         </div>
-        <button className="signup buttons" onClick={signup}> Sign Up </button>
+        <button className="signup-button buttons" onClick={signup}> Sign Up </button>
       </header>
     </div>
   );

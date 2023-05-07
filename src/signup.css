@@ -45,6 +45,18 @@
     flex-direction:column; 
 }
 
+.disabled{
+    opacity: .5;
+}
+
+.password-error-message{
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
 /*.error{
     display: visible;
     color: red;
