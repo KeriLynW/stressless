@@ -1,9 +1,65 @@
 {
-    "cities": [
-        {"name":"Toronto"},
-        {"name":"NewYork"},
-        {"name":"Paris"},
-        {"name":"Waterloo"},
-        {"name":"Scarborough"}
-    ]
+  "cities": [
+    {
+      "name": "Toronto"
+    },
+    {
+      "name": "NewYork"
+    },
+    {
+      "name": "Paris"
+    },
+    {
+      "name": "Waterloo"
+    },
+    {
+      "name": "Scarborough"
+    }
+  ],
+  "users": [
+    {
+      "firstname": "Keri",
+      "lastname": "Walter",
+      "password": "1234",
+      "username": "keriw",
+      "id": 2
+    },
+    {
+      "firstname": "Greg",
+      "lastname": "Walter",
+      "password": "1234",
+      "username": "gregw",
+      "id": 1
+    },
+    {
+      "user": {
+        "firstname": "k",
+        "lastname": "w",
+        "password": "1234",
+        "username": "keriw"
+      },
+      "id": 3
+    },
+    {
+      "firstname": "Greg2",
+      "lastname": "Walter2",
+      "password": "12342",
+      "username": "gregw2",
+      "id": 4
+    },
+    {
+      "firstname": "kkkkkkllll",
+      "lastname": "wwwwwlllll",
+      "password": "1234llll",
+      "username": "keriwwwllll",
+      "id": 5
+    },
+    {
+      "firstname": "zz",
+      "lastname": "zzz",
+      "password": "1234",
+      "username": "zzzz",
+      "id": 6
+    }
+  ]
 }

@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import shape from './shape.svg';
 import logo from './logo5.png'
 
+import { setUser } from './services/users';
+
 function Signup () { 
     let [ count, setCount] = useState(0);
     const [ firstname, setFirstname] = useState("");
@@ -53,7 +55,20 @@ function Signup () {
      };
 
      const signupUser = event => {
-        alert("hello");
+        if(password2Enabled && firstname && lastname && username){
+            setUser(
+                {
+                    firstname,
+                    lastname,
+                    password,
+                    username
+                }  
+            );
+            navigate('/signedin');
+        } else {
+            navigate('/signinerror');
+        }
+        
      };
 
     return (
@@ -91,6 +106,7 @@ function SignUp () {
     function navigate_home() {
         //alert("login button works");
         navigate('/home');
+        alert("hello");
 
     const [pass, setPass] = useState(0);
     const [confirmPass, setconfirmPass] = useState(0);

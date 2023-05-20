@@ -1,12 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './login.css';
 import { useNavigate } from "react-router-dom";
 import shape from './shape.svg';
 
+import { getUsers } from './services/users';
+
 function Login () { 
     const [ username, setUsername]= useState("");
-    const [ [password], setPassword]= useState("");
+    const [ password, setPassword]= useState("");
+    const [users, setUsers] = useState([]);
     let navigate = useNavigate();
+
+    useEffect(() => {
+        let mounted = true;
+        getUsers()
+          .then(users => {
+            if(mounted) {
+              setUsers(users)
+            }
+          })
+        return () => mounted = false;
+      }, [])
 
     const navigate_home = () => {
         //alert("login button works");
@@ -14,15 +28,24 @@ function Login () {
       }
 
     const verifyUserAndLoginOrRedirect = () => {
-        navigate('/loggedin');
+        let user = {};
+        user = users.filter(user => user.username == username);
+
+        if(user[0] && user[0].password == password) {
+            navigate('/loggedin');
+        } else {
+            navigate('/loginerror');
+        }
     }
 
     const updateUsername = event => {
         setUsername(event.target.value);
+        console.log(username);
      };
 
      const updatePassword = event => {
         setPassword(event.target.value);
+        console.log(password);
      };
 
     return (

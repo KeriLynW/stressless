@@ -4,6 +4,9 @@ import Home from './Home.js';
 import Login from './Login';
 import SignUp from './SignUp';
 import LoggedIn from './LoggedIn'
+import SignedIn from './SignedIn'
+import LoginError from './LoginError'
+import SignInError from './SignInError.js';
 
 import './App.css';
 
@@ -18,6 +21,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/loggedin" element={<LoggedIn />} />
+        <Route path="/signedin" element={<SignedIn />} />
+        <Route path="/loginerror" element={<LoginError />} />
+        <Route path="/signinerror" element={<SignInError />} />
       </Routes>
     </BrowserRouter>
   );
