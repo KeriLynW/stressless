@@ -1,5 +1,7 @@
 .App {
     text-align: center;
+    background-color: #F3F3F3;
+    min-height: 715px;
   }
   
   /*.App-logo {
@@ -19,6 +21,12 @@
     top: 0px;
     left: 0px;
   }
+  .shape2 {
+    width: calc(50px + 4vmin);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
   
   .App-header {
     background-color: #F3F3F3;
@@ -37,12 +45,31 @@
   
   }
   
-  .title {
+  .title3 {
     color: black;
     font-size: calc(22px + 4vmin);
     font-family: Garamond, serif;
   }
-  
+
+  .title {
+    padding-top: 1.2cm;
+    color: black;
+    font-size: calc(22px + 4vmin);
+    font-family: Garamond, serif;
+  }
+  .title2 {
+    color: black;
+    padding-top: 20px;
+    font-size: calc(16px + 4vmin);
+    font-family: Garamond, serif;
+  }
+
+  .padleft {
+    padding-left: 15cm;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
   .sub-title {
     color: #666464;
     font-size: calc((28px + 4vmin)/4);
@@ -68,6 +95,62 @@
   
   }
   
+  .message {
+    padding-bottom: 50px;
+  }
+
+  .body{
+    font-family: verdana, sans-serif;
+    text-align: left;
+    padding-left: 50px;
+
+  }
+
+  .due_time {
+    color: chartreuse;
+  }
+
+  .task {
+    font-size: 27px;
+    text-indent: 0.5cm;
+    font-family: Garamond, serif;
+  }
+  .task_note {
+    font-size: 11.5px;
+    text-indent: 0.25cm;
+  }
+
+  .task_add {
+    display:flex;
+    flex-direction:column; 
+  }
+
+  .add {
+    text-indent: 3.5cm;
+    padding-top: 1cm;
+  }
+
+  .Prompt {
+    padding-left: 8.3cm;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+  .padd {
+    padding-bottom: 22px;
+  }
+
+  .pad {
+    padding-top: 30px;
+  }
+
+  .cent {
+    padding-top: 15px;
+    padding-left: 670px;
+  }
+
+
   /*
   .App-link {
     color: #61dafb;

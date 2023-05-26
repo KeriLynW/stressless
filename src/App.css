@@ -55,12 +55,20 @@
   border: 1px;
 }
 
-.login-button, .signup-button {
- background-color: #283EFF;
- color: white;
- border: 1px;
- border-style: solid;
- border-color: #283EFF;
+.login-button {
+  background-color: #283EFF;
+  color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: #283EFF;
+}
+
+.signup-button {
+  background-color: #F3F3F3;
+  color: black;
+  border: 1px;
+  border-style: solid;
+  border-color: Black;
 }
 
 .divider {

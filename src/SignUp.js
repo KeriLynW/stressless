@@ -74,17 +74,23 @@ function Signup () {
     return (
         <div className="signnup">
             <img src= {shape} className="shape" onClick={navigate_home}/>
+            <header className="Login-header"> 
+                <a className="login-title">Sign Up</a>
+                <a className="login-subtitle">
+                    Please create an account to continue.
+                </a>
+            </header>
             <div className="signup-form">
                 <label className="laput" for="f-name">First Name: </label>
-                <input className="laput" type="text" id="f-name" onChange={updateFirstname}/><br/><br/>
+                <input className="laput" type="text" id="f-name" onChange={updateFirstname} required/><br/><br/>
                 <label className="laput" for="l-name">Last Name: </label>
-                <input className="laput" type="text" id="l-name" onChange={updateLastname}/><br/><br/>
+                <input className="laput" type="text" id="l-name" onChange={updateLastname} required/><br/><br/>
                 <label className="laput" for="u-name">Username: </label>
-                <input className="laput" type="text" id="u-name" onChange={updateUsername}/><br/><br/>
+                <input className="laput" type="text" id="u-name" onChange={updateUsername} minLength = "3" required/><br/><br/>
                 <label className="laput" for="pass">Password:  </label>
-                <input className="laput" type="text" id="pass" onChange={updatePassword}/><br/><br/>
+                <input className="laput" type="text" id="pass" onChange={updatePassword} minLength = "6" required/><br/><br/>
                 <label className="laput" for="c-pass-s"> Confirm Password:  </label>
-                <input className="laput" type="text" id="pass2" onChange={updatePassword2}/><br/><br/>
+                <input className="laput" type="text" id="pass2" onChange={updatePassword2} minLength = "6" required/><br/><br/>
                 <label className={(password.length>3 && disabledButton) ? "password-error-message": "hidden"} for="c-pass-s"> Passwords do not match</label>
                 <br/>
                 <br/>

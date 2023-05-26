@@ -21,7 +21,7 @@ function Home() {
       <img src= {shape} className="shape"/>
       <header className="App-header">
       <img src={log} className="main-img" /> 
-        <p className="title">
+        <p className="title3">
           Welcome to StressLess!
         </p>
         <a className="sub-title">

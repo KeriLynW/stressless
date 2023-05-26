@@ -7,6 +7,8 @@ import LoggedIn from './LoggedIn'
 import SignedIn from './SignedIn'
 import LoginError from './LoginError'
 import SignInError from './SignInError.js';
+import Settings from './Settings.js';
+import Prompt from './prompt.js';
 
 import './App.css';
 
@@ -18,12 +20,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/loggedin" element={<LoggedIn />} />
         <Route path="/signedin" element={<SignedIn />} />
         <Route path="/loginerror" element={<LoginError />} />
         <Route path="/signinerror" element={<SignInError />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/prompt" element={<Prompt />} />
       </Routes>
     </BrowserRouter>
   );

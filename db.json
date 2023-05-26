@@ -60,6 +60,34 @@
       "password": "1234",
       "username": "zzzz",
       "id": 6
+    },
+    {
+      "firstname": "Rivers",
+      "lastname": "Cuomo",
+      "password": "WEEZERRULEZ",
+      "username": "WEEZER",
+      "id": 7
+    },
+    {
+      "firstname": "Billie Joe",
+      "lastname": "Armstrong",
+      "password": "Green Day",
+      "username": "BillieJoe",
+      "id": 8
+    },
+    {
+      "firstname": "Matthew James",
+      "lastname": "Bellamy",
+      "password": "MUSE",
+      "username": "MattB",
+      "id": 9
+    },
+    {
+      "firstname": "Kurt",
+      "lastname": "Cobain",
+      "password": "Nirvana",
+      "username": "Cobain",
+      "id": 10
     }
   ]
 }

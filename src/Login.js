@@ -61,7 +61,7 @@ function Login () {
                 <label  className="laput" for="u-name">Username: </label>
                 <input  className="laput" type="text" id="u-name" onChange={updateUsername}/><br/><br/>
                 <label  className="laput" for="pass-l">Password:  </label>
-                <input  className="laput" type="text" id="pass-l" onChange={updatePassword}/><br/><br/>
+                <input  className="laput" type="text" id="pass-l" onChange={updatePassword}  min-length="4" required/><br/><br/>
                 <button className="login-button buttons" onClick={verifyUserAndLoginOrRedirect}>Login</button>
             </div>
         </div>
