@@ -150,6 +150,10 @@
     padding-left: 670px;
   }
 
+.button-padding{
+  padding: 5px;
+}
+
 
   /*
   .App-link {
@@ -164,6 +168,4 @@
       transform: rotate(360deg);
     }
   }*/
-  
-  
   

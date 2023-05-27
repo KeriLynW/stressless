@@ -30,11 +30,11 @@ function LoggedIn() {
       <header className="title">Welcome back!</header>
       <body className="body">
       <p className="task">Tasks:</p>
-      <a >-> Write Shakespeare Essay </a> <a className = "due_time"> (due on Wednesday)</a>
+      <a >-&#10217; Write Shakespeare Essay </a> <a className = "due_time"> (due on Wednesday)</a>
       <p className="task_note" ><b>Note:</b> Remember To start broad and then slowly become more specific for the introduction</p>
-      <a >-> Code this Website </a> <a className = "due_time"> (Must be finished by Saturday morning)</a> <a className = "Prompt" onClick = {navigate_prompt}>Generate Prompt</a>
+      <a >-&#10217; Code this Website </a> <a className = "due_time"> (Must be finished by Saturday morning)</a> <a className = "Prompt" onClick = {navigate_prompt}>Generate Prompt</a>
       <p className="task_note padd"> <b>Note:</b> Remember to work on the tasks portion today.</p>
-      <a>-> Prepare for geography test on climate change</a> <a className = "due_time"> (Test on next Wednesday)</a>
+      <a>-&#10217; Prepare for geography test on climate change</a> <a className = "due_time"> (Test on next Wednesday)</a>
       <p className="task_note"> <b>Note:</b> Review class notes for the entire unit.</p>
       <p className = "add"> <b>ADD ANOTHER TASK </b></p>
       <label className="task_add" for="task"> Task </label>

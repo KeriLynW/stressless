@@ -29,7 +29,7 @@ function SignedIn() {
       </a>
       <body className="body">
       <p className="task">Tasks:</p>
-      <a >-> Example Task </a> <a className = "due_time"> (Timeframe for completion)</a>
+      <a > -&#10217; Example Task </a> <a className = "due_time"> (Timeframe for completion)</a>
       <p className="task_note" ><b>Note:</b> Remember Lorem dorat sit amet</p>
       <a className = "padleft" onClick = {navigate_prompt}>Generate Prompt</a>
       <p className = "add"> <b>ADD ANOTHER TASK </b></p>
